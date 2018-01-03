@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body,.container{
+    width:100%;
+}
+.main > .row{
+    padding:2em;
+}
+
+body {
+    background-color: #202A25;
+    font-family: Helvetica, '微軟正黑體';
+    text-align: center;
+    font-size:5vmin;
+}
+
+.world{
+    padding:1em 2em;
+    border-radius:10px;
+    box-shadow:0px 0px 35px rgba(255,255,255,0.3); 
+    transition:0.5s;
+}
+
+.world:hover{
+    box-shadow:5px 5px 60px rgba(255,255,255,0.6); 
+    transform:translate(-5px,-5px); 
+}
+
+.normalWorld{
+    color:#202A25;
+    background-color:#F1BF98;
+}
+
+.loveWorld{
+    color:#FFFFC7;
+    background-color:#ED6B86;
+}
+
+.title{
+    font-size:2em;
+}
+
+.world > .row{
+    margin-top:1em;
+}
