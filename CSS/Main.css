@@ -1,11 +1,13 @@
 *{
     margin: 0px;
     padding:0px;
+    border:solid 1px #FFF;
 }
 
-body,.container{
+body , .container{
     width:100%;
 }
+
 .main > .row{
     padding:2em;
 }
@@ -23,13 +25,6 @@ body {
 .fallInLove{
     color:#FFF;
     font-size:2em;
-}
-.fallInLove >.nowDate{
-    font-size:1em;
-}
-
-.fallInLove>.nowTime{
-    font-size:3em;
 }
 
 .world{
@@ -58,32 +53,86 @@ body {
     background-color:#ED6B86;
 }
 
+.fallInLove >.nowDate{
+    font-size:1em;
+}
 
-@media screen and (max-width: 1620px) and (min-width: 1080px) {
+.fallInLove>.nowTime{
+    font-size:2.8em;
+}
+
+@media screen and (max-width: 1620px) and (min-width: 1280px) {
+    .main > .row{
+        padding:1.4em;
+    }
     .fallInLove >.nowDate{
+        font-size:0.7em;
+    }
+    
+    .fallInLove>.nowTime{
+        font-size:2.2em;
+    }
+    .world{
+        font-size:1em;
+        padding:0.9em 1.8em;
+    }
+    .world > .title{
+        font-size:2.6em;
+    }
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1080px) {
+    .main > .row{
+        padding:1em;
+    }
+    .fallInLove >.nowDate{
+        font-size:0.6em;
+    }
+    .fallInLove>.nowTime{
+        font-size:1.7em;
+    }
+    .world{
         font-size:0.8em;
+        padding:0.8em 1.6em;
     }
-    
-    .fallInLove>.nowTime{
-        font-size:2em;
+    .world > .title{
+        font-size:2.6em;
     }
 }
 
-@media screen and (max-width: 1080px) and (min-width: 520px) {
+@media screen and (max-width: 1080px) and (min-width: 992px) {
+    .main > .row{
+        padding:0.7em;
+    }
     .fallInLove >.nowDate{
         font-size:0.5em;
     }
-    
     .fallInLove>.nowTime{
         font-size:1.5em;
+    }
+    .world{
+        font-size:0.7em;
+        padding:0.7em 1.4em;
+    }
+    .world > .title{
+        font-size:2.4em;
     }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 992px) {
+    .main > .row{
+        padding:0.7em;
+    }
     .fallInLove >.nowDate{
         font-size:0.5em;
     }
-    
     .fallInLove>.nowTime{
         font-size:1.5em;
+    }
+    .world{
+        font-size:1em;
+        padding:1em 2em;
+    }
+    .world > .title{
+        font-size:3em;
     }
 }
