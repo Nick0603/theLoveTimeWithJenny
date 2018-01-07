@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding:0px;
-
 }
 
 body,.container{
@@ -23,6 +22,14 @@ body {
 
 .fallInLove{
     color:#FFF;
+    font-size:2em;
+}
+.fallInLove >.nowDate{
+    font-size:1em;
+}
+
+.fallInLove>.nowTime{
+    font-size:3em;
 }
 
 .world{
@@ -38,7 +45,7 @@ body {
 }
 
 .world > .title{
-    font-size:2em;
+    font-size:3em;
 }
 
 .normalWorld{
@@ -51,3 +58,32 @@ body {
     background-color:#ED6B86;
 }
 
+
+@media screen and (max-width: 1620px) and (min-width: 1080px) {
+    .fallInLove >.nowDate{
+        font-size:0.8em;
+    }
+    
+    .fallInLove>.nowTime{
+        font-size:2em;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 520px) {
+    .fallInLove >.nowDate{
+        font-size:0.5em;
+    }
+    
+    .fallInLove>.nowTime{
+        font-size:1.5em;
+    }
+}
+@media screen and (max-width: 520px) {
+    .fallInLove >.nowDate{
+        font-size:0.5em;
+    }
+    
+    .fallInLove>.nowTime{
+        font-size:1.5em;
+    }
+}
