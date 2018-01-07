@@ -20,33 +20,40 @@
 <body>
   <div class="container main">
     <div class="row">
-
+      <div class="contianer fallInLove">
+        <div class="row">
+          <label for="text">當前時間：</label>
+          <label for="text"  class="date">
+              <span for="text" id="year">XX</span>
+              <span for="text">年</span>
+              <span for="text" id="month">XX</span>
+              <span for="text">月</span>
+              <span for="text" id="date">XX</span>
+              <span for="text">日</span>
+          </label>
+          <label  class="time">
+              <span  id="hours">XX</span>：<span  id="minutes">XX</span>：<span  id="seconds">XX</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <div class="col-md-6">
         <div class="container normalWorld world">
           <div class="row title ">
-            外在世界
+            交往日
           </div>
-          <div class = "row">
-            <label for="text" id="year">XX</label>
-            <label for="text">年</label>
-            <label for="text" id="month">XX</label>
-            <label for="text">月</label>
-            <label for="text" id="date">XX</label>
-            <label for="text">日</label>
-          </div>
-          <div class="row">
-            <label for="text" id="hours">XX</label>
-            <label for="text">：</label>
-            <label for="text" id="minutes">XX</label>
-            <label for="text">：</label>
-            <label for="text" id="seconds">XX</label>
+          <div class = "row date">
+              <label class="fallInLove_year">XX</label>年
+              <label class="fallInLove_month">XX</label>月
+              <label class="fallInLove_date">XX</label>日
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 date">
         <div class="container loveWorld world">
           <div class="row title ">
-            已經交往
+            已交往
           </div>
           <div class = "row">
             <label for="text" id="passYears">XX</label>

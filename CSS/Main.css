@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding:0px;
+
 }
 
 body,.container{
@@ -9,12 +10,19 @@ body,.container{
 .main > .row{
     padding:2em;
 }
+.main > .row:nth-child(1){
+    margin-top:1em;
+}
 
 body {
     background-color: #202A25;
     font-family: Helvetica, '微軟正黑體';
     text-align: center;
     font-size:5vmin;
+}
+
+.fallInLove{
+    color:#FFF;
 }
 
 .world{
@@ -29,6 +37,10 @@ body {
     transform:translate(-5px,-5px); 
 }
 
+.world > .title{
+    font-size:2em;
+}
+
 .normalWorld{
     color:#202A25;
     background-color:#F1BF98;
@@ -39,10 +51,3 @@ body {
     background-color:#ED6B86;
 }
 
-.title{
-    font-size:2em;
-}
-
-.world > .row{
-    margin-top:1em;
-}

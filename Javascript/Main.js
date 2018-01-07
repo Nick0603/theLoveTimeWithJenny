@@ -29,6 +29,7 @@ let getPassDaysObj = (times)=>{
     }
     return DateObj;
 }
+
 let updateView = (todayObj,passObj) => {
     $('#year').text(todayObj.year);
     $('#month').text(todayObj.month);
@@ -41,16 +42,27 @@ let updateView = (todayObj,passObj) => {
     $('#passDays').text(passObj.passDays);
 }
 
-var FallInLoveDate = new Date(2017,12-1,31);
+let fillInLoveDate = (FallInLove) => {
+    $('.fallInLove_year').text(FallInLove[0]);
+    $('.fallInLove_month').text(FallInLove[1]);
+    $('.fallInLove_date').text(FallInLove[2]);
+}
 
+var FallInLove = "2017/12/31";
+var FallInLove = FallInLove.split("/").map((str)=>Number(str));
+var init = () => {
+    let FallInLove = window.FallInLove;
+    fillInLoveDate(FallInLove);
+}
 var loop = () => {
+    let FallInLoveDate = new Date(FallInLove);
     let today = new Date();
-    let FallInLoveDate = window.FallInLoveDate;
     let passMSeconds = today - FallInLoveDate;
     let todayObj = getDateObj(today);
     let passObj = getPassDaysObj(passMSeconds);
     updateView(todayObj,passObj);
 }
 
+init();
 loop();setInterval(loop,1000);
 
