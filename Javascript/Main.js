@@ -49,6 +49,7 @@ let fillInLoveDate = (FallInLove) => {
 }
 
 var FallInLove = "2017/12/31";
+var EndLove = "2020/06/27 23:59:59";
 var FallInLove = FallInLove.split("/").map((str)=>Number(str));
 var init = () => {
     let FallInLove = window.FallInLove;
@@ -56,9 +57,9 @@ var init = () => {
 }
 var loop = () => {
     let FallInLoveDate = new Date(FallInLove);
-    let today = new Date();
-    let passMSeconds = today - FallInLoveDate;
-    let todayObj = getDateObj(today);
+    let EndLoveDate = new Date(EndLove);
+    let passMSeconds = EndLoveDate - FallInLoveDate;
+    let todayObj = getDateObj(EndLoveDate);
     let passObj = getPassDaysObj(passMSeconds);
     updateView(todayObj,passObj);
 }
